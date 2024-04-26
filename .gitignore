@@ -5,3 +5,5 @@ node_modules
 dist
 .cache
 .idea
+._*
+.DS_Store
