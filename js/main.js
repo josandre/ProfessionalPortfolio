@@ -609,7 +609,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   logoLink.addEventListener("click", function(event) {
     event.preventDefault();
-    var imageURL = "assets/images/logo-animated2.gif"; // Default image URL
+    var imageURL = "../images/logo-animated2.gif"; // Default image URL
     showImage(imageURL);
   });
 
@@ -666,7 +666,7 @@ function changeLanguage(lang) {
 
 
   if (lang === 'es') {
-    document.getElementById('cv').href = "assets/Curriculums/IngenieraSoftware-JocselynAguilar.pdf";
+    document.getElementById('cv').href = "..//Curriculums/IngenieraSoftware-JocselynAguilar.pdf";
     englandFlag.style.transform = "scale(1)";
     spainFlag.style.transform = "scale(1.5)";
     home_a.textContent = "Inicio"
@@ -696,7 +696,7 @@ function changeLanguage(lang) {
     description4.textContent = "La siguiente lista comprende las tecnologías con las que tengo experiencia. Sin embargo, estoy constantemente dispuesta a explorar nuevas tecnologías para mejorar mi capacidad de crear e innovar sistemas y aplicaciones."
 
   } else if (lang === 'en') {
-    document.getElementById('cv').href = "assets/Curriculums/SoftwareEngineer-JocselynAguilar.pdf";
+    document.getElementById('cv').href = "..//Curriculums/SoftwareEngineer-JocselynAguilar.pdf";
     englandFlag.style.transform = "scale(1.5)";
     spainFlag.style.transform = "scale(1)";
     home_a.textContent = "Home"
