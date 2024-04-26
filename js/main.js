@@ -1,5 +1,5 @@
 let typed = undefined;
-let currentLanguage = "es";
+let currentLanguage = "en";
 const enDataOptions = ["Software Engineer", "Back End Developer", "Front End Developer", "Innovation", "Passionate", "Empowered", "Disciplined"];
 const esDataOptions = ["Ingeniera de software", "Desarrolladora de back-end", "Desarrolladora de front-end", "Innovación", "Apasionada", "Empoderada", "Disciplinada"];
 
