@@ -750,23 +750,22 @@ function sendEmail(){
     return;
   }
 
-  snackbar.classList.remove("alert-danger");
-  snackbar.classList.add("alert-success");
-  snackbar.classList.add("show");
-  snackbar.innerText = "Email sent..."
-
-  setTimeout(function(){ snackbar.classList.remove("show"); }, 3000);
-
-  // Email.send({
-  //   Host : "smtp.elasticemail.com",
-  //   Port: 2525,
-  //   Username : "ajocseline@gmail.com",
-  //   Password : "2D6339FCC3788AED3F4329912E5EA20C1496",
-  //   To : 'ajocseline@gmail.com',
-  //   From : "ajocseline@gmail.com",
-  //   Subject : params.subject,
-  //   Body :  `${params.name} from (${params.email}) wrote: \n ${params.message}`
-  // }).then();
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Port: 2525,
+    Username : "ajocseline@gmail.com",
+    Password : "2D6339FCC3788AED3F4329912E5EA20C1496",
+    To : 'ajocseline@gmail.com',
+    From : "ajocseline@gmail.com",
+    Subject : params.subject,
+    Body :  `${params.name} from (${params.email}) wrote: \n ${params.message}`
+  }).then(message => {
+    snackbar.classList.remove("alert-danger");
+    snackbar.classList.add("alert-success");
+    snackbar.classList.add("show");
+    snackbar.innerText = "Email sent..."
+    setTimeout(function(){ snackbar.classList.remove("show"); }, 3000);
+  });
 }
 
 
