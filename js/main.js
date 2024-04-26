@@ -612,7 +612,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   logoLink.addEventListener("click", function(event) {
     event.preventDefault();
-    var imageURL = "../images/logo-animated2.gif"; // Default image URL
+    var imageURL = "./images/logo-animated2.gif"; // Default image URL
     showImage(imageURL);
   });
 
