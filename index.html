@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/themify-icons/css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/slick/slick.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/featherlight/featherlight.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/featherlight/featherlight.gallery.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+
+  </head>
+
+  <body data-spy="scroll" data-target="#navbarCollapse" class="bg-gray-800">
+
+    <div id="snackbar" class="alert alert-success" role="alert">
+      ¡Este es un Snackbar!
+    </div>
+
+    <div class="loader bg-dark">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+
+    <nav id="siteNavbar" class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark bg-gray-800 shadow-dark-lg fixed-top py-2">
+
+      <a class="navbar-brand" id="logoLink">
+        <img src="assets/images/logo.png" alt="" class="navbar-brand-img navbar-brand-img-light">
+      </a>
+
+      <button class="navbar-toggler-alternative" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="siteNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-alternative-icon">
+          <span></span>
+        </span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarCollapse">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a id="home-a" class="nav-link scrollto" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a id="services-a" class="nav-link scrollto" href="#experiences">Stack Technologies</a>
+          </li>
+          <li class="nav-item">
+            <a id="portfolio-a" class="nav-link scrollto" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a id="contact-a" class="nav-link scrollto" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <a href="#"  onclick="changeLanguage('en')"><img class="england-img england-img" src="assets/images/england-flag.png" alt="USA Flag"></a>
+        <a href="#" onclick="changeLanguage('es')"><img class="spain-img" src="assets/images/spain-flag.png" alt="Spain Flag" width="20"></a>
+
+
+      </div>
+    </nav>
+
+
+    <a href="#" class="btn-back-to-top scrollto btn btn-icon btn-primary shadow-light mb-4 mr-4" tabindex="-1">
+      <i class="fas fa-chevron-up btn-icon-inner"></i>
+    </a>
+
+    <section id="home" class="py-9 py-xl-12">
+      <div class="container position-absolute top-0 bottom-0 left-0 right-0 mr-0 mx-lg-auto zindex-0 mt-12 d-none d-lg-block">
+        <div class="row no-gutters position-absolute top-0 bottom-0 left-0 right-0">
+          <div class="col-3 offset-9 position-absolute top-0 bottom-0 left-0 right-0" >
+            <div class="overlay overlay-advanced bg-primary vw-100 mb-n9 mb-xl-n12 ml-4" style="align-content: center" id="imageOverlay" >
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container align-self-center py-9 py-xl-12">
+        <div class="row align-items-center">
+          <div class="col-lg-10 text-center text-lg-left text-white mb-8 mb-lg-0">
+
+            <p id="welcome" class="h5 mb-5">
+            Welcome
+            </p>
+
+            <h1 id="iam" class="mb-5">
+              I am <span data-toggle="typed" data-options='{"strings": ["Software Engineer", "Back End Developer", "Front End Developer", "Innovation", "Passionate", "Empowered", "Disciplined"]}'></span>
+            </h1>
+
+            <p id="summary" class="mb-7">
+              Full Stack  Engineer with experience in Python, Django, Angular and Docker. I also have knowledge of Java, Spring Boot, React and AWS. I am Proactive and adaptable. I seek to continue growing professionally and contribute my skills to challenging projects.
+            </p>
+            <a id="cv" class="btn btn-primary d-block d-lg-inline-block ml-lg-1" href="" download="Curriculum-JocselynAguilar" target="_blank" rel="noopener nofollow">Download CV</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-9 py-xl-12">
+      <div class="container position-absolute top-0 bottom-0 left-0 right-0 mr-0 mx-xl-auto zindex-0">
+        <div class="overlay overlay-advanced bg-gray-900 vw-100 left-auto mr-xl-4"></div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-9 mb-lg-0">
+            <h2 id="name" class="text-white mb-4">Hello, my name is Jocselyn Aguilar!</h2>
+            <p id="aboutMe1" class="lead text-gray-400">
+              I'm an software developer fueled by a passion for creation. My happiness resides in the work I do, where I dive into challenges, innovate, and bring ideas to life. With each project, I strive to push boundaries, solve problems, and leverage cutting-edge technologies to fulfill the needs and desires of our clients, crafting solutions that exceed expectations and drive progress.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiences" class="py-1 pt-xl-10">
+      <div class="container">
+        <div class="row mb-8">
+          <div class="col-lg-9 mx-auto text-center">
+            <h2 id="stack" class="text-white mb-4">Technology Stack</h2>
+            <p id="description4" class="text-gray-400">The following stack comprises the technologies with which I have experience. However, I'm constantly open to exploring new technologies to enhance my ability to create and innovate systems and applications.</p>
+          </div>
+        </div>
+        <div class="row align-items-center mt-n6 mb-n9 mb-xl-n12 mx-n4">
+
+          <div class="col-md-6 col-lg-4 pt-6 px-4">
+            <div class="p-7 shadow-dark shadow-lift rounded-3x bg-gray-800">
+              <div class="d-flex align-items-center mb-4 ml-n7">
+                <div class="w--2 h--8 java-color mr-6 my-0"></div>
+                <h4 class="h6 text-white mb-0">Java</h4>
+              </div>
+
+              <p class="text-gray-400"> REST and GraphQL Apis,  Spring Boot, JPA, Hibernate, SQL, AWS, CI/CD</p>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 pt-6 px-4">
+            <div class="p-7 shadow-dark shadow-lift rounded-3x bg-gray-800">
+              <div class="d-flex align-items-center mb-4 ml-n7">
+                <div class="w--2 h--8 python-color mr-6 my-0"></div>
+                <h4 class="h6 text-white mb-0">Python</h4>
+              </div>
+              <p class="text-gray-400">REST Apis, Django framework, Google cloud, Open AI, Typesense, Stripe, 4Geeks Payments</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 pt-6 px-4">
+            <div class="p-7 shadow-dark shadow-lift rounded-3x bg-gray-800">
+              <div class="d-flex align-items-center mb-4 ml-n7">
+                <div class="w--2 h--8 react-color mr-6 my-0"></div>
+                <h4 class="h6 text-white mb-0">React</h4>
+              </div>
+              <p class="text-gray-400">GraphQL and REST services, Material UI, Bootstrap, React Native</p>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6 col-lg-4 pt-6 px-4">
+            <div class="p-7 shadow-dark shadow-lift rounded-3x bg-gray-800">
+              <div class="d-flex align-items-center mb-4 ml-n7">
+                <div class="w--2 h--8 node-color mr-6 my-0"></div>
+                <h4 class="h6 text-white mb-0">Node JS</h4>
+              </div>
+              <p class="text-gray-400">REST and GraphQl Apis, MongoDB, Graphql Apollo server, Express </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 pt-6 px-4">
+            <div class="p-7 shadow-dark shadow-lift rounded-3x bg-gray-800">
+              <div class="d-flex align-items-center mb-4 ml-n7">
+                <div class="w--2 h--8 java-color mr-6 my-0"></div>
+                <h4 class="h6 text-white mb-0">Angular</h4>
+              </div>
+              <p class="text-gray-400">Angular material, REST services, UI/UX, REST services </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 pt-6 px-4">
+            <div class="p-7 shadow-dark shadow-lift rounded-3x bg-gray-800">
+              <div class="d-flex align-items-center mb-4 ml-n7">
+                <div class="w--2 h--8 c-color mr-6 my-0"></div>
+                <h4 class="h6 text-white mb-0">C#</h4>
+              </div>
+              <p class="text-gray-400">.Net Core, REST Apis, Entity Framework Core, PLSQL, Azure,</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-9 py-xl-10">
+      <div class="container mt-9 mt-xl-12">
+        <div class="row mb-8">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2 class="text-white mb-4">Portfolio</h2>
+            <p class="text-gray-400 mb-5">
+              The next are projects that are finished, you are invite to visit my GitHub repository, where you can find the source code of every project and more.
+              <a class="text-neumorphic-light mb-5" href="https://github.com/josandre?tab=repositories">Go to GitHub repository</a></p>
+          </div>
+        </div>
+        <div class="masonry-container row mx-n4 mt-n6">
+
+          <div class="col-sm-6 col-lg-4 px-4 pt-6 masonry-item branding">
+            <a class="card border-0 rounded-3x overflow-hidden shadow-light hover-parent">
+              <div class="h--96 position-relative">
+                <div class="overlay overlay-advanced">
+                  <div class="overlay-inner bg-image-holder bg-cover hover-zoom">
+                    <img src="assets/images/bloom.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-gray-900">
+                  <h4 class="h5 text-white mb-0">Bloom</h4>
+                  <p class="small mb-1 text-gray-400">Aplicación web creada para ayudar a las personas a gestionar problemas asociados con la ansiedad, tiene como base la creación de módulos creados a partir de investigaciones que van desde juegos hasta gráficos que se alimentan a través de un wearable. La aplicación no solo permite una ayuda a las personas que sufren de este trastorno sino que permite a los médicos de salud ayudar a sus pacientes por medio de la comunicación y el manejo de recursos y tareas.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 px-4 pt-6 masonry-item design">
+            <a class="card border-0 rounded-3x overflow-hidden shadow-light hover-parent">
+              <div class="h--96 position-relative">
+                <div class="overlay overlay-advanced">
+                  <div class="overlay-inner bg-image-holder bg-cover hover-zoom">
+                    <img src="assets/images/homeflix.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-gray-900">
+                  <h4 class="h5 text-white mb-0">Homeflix</h4>
+                  <p class="small mb-1 text-gray-400">Desktop video player application created to give the users a platform where they can watch, download and upload videos. The app also allows the users share videos through the internal red  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 px-4 pt-6 masonry-item web">
+            <a class="card border-0 rounded-3x overflow-hidden shadow-light hover-parent">
+              <div class="h--96 position-relative">
+                <div class="overlay overlay-advanced">
+                  <div class="overlay-inner bg-image-holder bg-cover hover-zoom">
+                    <img src="assets/images/cenfoteco-kingdoms.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-gray-900">
+                  <h4 class="h5 text-white mb-0">Cenfoteco Kingdoms</h4>
+                  <p class="small text-uppercase mb-1 text-gray-400">Web</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 px-4 pt-6 masonry-item web">
+            <a class="card border-0 rounded-3x overflow-hidden shadow-light hover-parent">
+              <div class="h--96 position-relative">
+                <div class="overlay overlay-advanced">
+                  <div class="overlay-inner bg-image-holder bg-cover hover-zoom">
+                    <img src="assets/images/WazeOfThronesMap.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-gray-900">
+                  <h4 class="h5 text-white mb-0">Waze Of Thrones</h4>
+                  <p class="small  mb-1 text-gray-400">Desktop map application featuring the renowned map of Westeros from the famous series. With this application, users can effortlessly receive directions and view distances between locations. Simply input your starting point and destination to navigate the vast lands of Westeros with ease.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 px-4 pt-6 masonry-item design">
+            <a class="card border-0 rounded-3x overflow-hidden shadow-light hover-parent">
+              <div class="h--96 position-relative">
+                <div class="overlay overlay-advanced">
+                  <div class="overlay-inner bg-image-holder bg-cover hover-zoom">
+                    <img src="assets/images/java-snake.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-gray-900">
+                  <h4 class="h5 text-white mb-0">Snack Game</h4>
+                  <p class="small mb-1 text-gray-400">Vintage-inspired desktop snake game, a nostalgic classic brought to life on the computer screen. Relive the charm of the original game as you help your serpent eats each tasty apple to grow more and more. </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 px-4 pt-6 masonry-item web">
+            <a class="card border-0 rounded-3x overflow-hidden shadow-light hover-parent" >
+              <div class="h--96 position-relative">
+                <div class="overlay overlay-advanced">
+                  <div class="overlay-inner bg-image-holder bg-cover hover-zoom">
+                    <img src="assets/images/monopoly.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-gray-900">
+                  <h4 class="h5 text-white mb-0">Monopoly</h4>
+                  <p class="small mb-1 text-gray-400">Console application of the classic Monopoly game. This rendition faithfully replicates every feature of the real game, delivering an immersive and thrilling experience right from your console screen.</p>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-9 py-xl-12">
+      <div class="overlay overlay-advanced bg-primary"></div>
+      <div class="container text-white">
+        <div class="row mb-8">
+          <div class="col-lg-8">
+            <h2 class="mb-4">Contact</h2>
+            <p> Want to know more about me? Drop me an email and I will get back to you as soon as I can.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 mb-8 mb-lg-0">
+		    <div class="row">
+
+            <div class="col-sm-6 col-md-4 col-lg-12 mb-5 mb-md-0 mb-lg-5">
+              <div class="icon icon-4x mb-4">
+                <i class="ti-mobile"></i>
+              </div>
+              <p>(506) 6339-9135<br/>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-12 mb-5 mb-md-0 mb-lg-5">
+              <div class="icon icon-4x mb-4">
+                <i class="ti-location-pin"></i>
+              </div>
+              <p>Heredia, San Francisco<br/>
+              Costa Rica</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-12">
+              <div class="icon icon-4x mb-4">
+                <i class="ti-email"></i>
+              </div>
+              <p>
+                <a href="mailto:jocselynaguilarchinchilla@gmail.com" class="text-white">jocselynaguilarchinchilla@gmail.com</a><br/>
+              </p>
+            </div>
+
+            </div>
+          </div>
+          <div class="col-lg-7 offset-lg-1">
+
+            <div class="contact-form">
+              <form class="mb-0" id="cf" name="cf" method="post" autocomplete="off">
+                <div class="form-row">
+
+                  <div class="form-process"></div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" id="cf-name" name="cf-name" placeholder="Enter your name" class="form-control form-control-soft-light bg-soft-dark required">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="email" id="cf-email" name="cf-email" placeholder="Enter your email address" class="form-control form-control-soft-light bg-soft-dark required">
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input type="text" id="cf-subject" name="cf-subject" placeholder="Subject (Optional)" class="form-control form-control-soft-light bg-soft-dark">
+                    </div>
+                  </div>
+
+                  <div class="col-12 mb-4">
+                    <div class="form-group">
+                      <textarea name="cf-message" id="cf-message" placeholder="Message" class="form-control form-control-soft-light bg-soft-dark required" rows="7"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-12 d-none">
+                    <input type="text" id="cf-botcheck" name="cf-botcheck" value="" class="form-control form-control-soft-light bg-soft-dark" />
+                  </div>
+
+                  <div class="col-12 text-center text-lg-left">
+                    <button class="btn btn-dark" type="button" onclick="sendEmail()" id="cf-submit" name="cf-submit">Send Message</button>
+                  </div>
+
+                  <input type="hidden" name="prefix" value="cf-">
+
+                </div>
+              </form>
+              <div class="contact-form-result text-center"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="position-relative py-9 py-lg-12 bg-dark text-gray-500">
+      <div class="container px-xl-10">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <p class="text-gray-400 mb-5">Professional Portfolio develop and design by Jocselyn Aguilar</p>
+            <ul class="list-inline mb-8">
+
+              <li class="list-inline-item mx-0">
+                <a class="btn btn-sm btn-icon btn-soft-secondary text-gray-400" href="https://www.linkedin.com/in/jocselyn-aguilar-a85749251/" tabindex="0">
+                  <i class="fab fa-linkedin-in btn-icon-inner"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/popper.js/dist/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/vendor/jquery-form/dist/jquery.form.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope/dist/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/featherlight/featherlight.min.js"></script>
+    <script src="assets/vendor/featherlight/jquery.detect_swipe.js"></script>
+    <script src="assets/vendor/featherlight/featherlight.gallery.min.js"></script>
+    <script src="assets/vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <script src="assets/vendor/jQuery.countdown/dist/jquery.countdown.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
