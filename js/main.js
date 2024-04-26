@@ -1,4 +1,7 @@
-
+let typed = undefined;
+let currentLanguage = "es";
+const enDataOptions = ["Software Engineer", "Back End Developer", "Front End Developer", "Innovation", "Passionate", "Empowered", "Disciplined"];
+const esDataOptions = ["Ingeniera de software", "Desarrolladora de back-end", "Desarrolladora de front-end", "Innovación", "Apasionada", "Empoderada", "Disciplinada"];
 
 (function($){
   "use strict";
@@ -628,103 +631,138 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 window.onload = function (){
-  changeLanguage('en');
-}
+  resetTyped(enDataOptions)
 
+  changeLanguage(currentLanguage);
+}
 
 function changeLanguage(lang) {
   const home_a = document.getElementById('home-a');
   const services_a = document.getElementById('services-a');
   const portfolio_a = document.getElementById('portfolio-a');
+  const portfolioText = document.getElementById('portfolioText');
+  const portfolioDesc = document.getElementById('portfolioDesc');
+  const portfolioLink = document.getElementById('portfolioLink');
+  const bloom = document.getElementById('bloom');
+  const homeflix = document.getElementById('homeflix');
+  const cenfoteco = document.getElementById('cenfoteco');
+  const wazeOfThrones = document.getElementById('wazeOfThrones');
+  const snake = document.getElementById('snake');
+  const monopoly = document.getElementById('monopoly');
   const contact_a = document.getElementById('contact-a');
+  const contactTitle = document.getElementById('contactTitle');
+  const contactDesc = document.getElementById('contactDesc');
+  const credits = document.getElementById('credits');
   const englandFlag = document.querySelector('.england-img');
   const spainFlag = document.querySelector('.spain-img');
   const welcome = document.getElementById('welcome');
-  const iam = document.getElementById('iam');
-  const typedData = document.getElementById('typedData');
+  const iam = document.getElementById('iamContent');
   const summary = document.getElementById('summary');
   const cv = document.getElementById('cv');
   const name = document.getElementById('name');
   const aboutMe1 = document.getElementById('aboutMe1');
-  const experience = document.getElementById('experience');
-  const experienP = document.getElementById('experienP');
-  const date1 = document.getElementById('date1');
-  const title1 = document.getElementById('title1');
-  const description1 = document.getElementById('description1');
-  const reference1 = document.getElementById('reference1');
-  const date2 = document.getElementById('date2');
-  const title2 = document.getElementById('title2');
-  const description2 = document.getElementById('description2');
-  const reference2 = document.getElementById('reference2');
-  const date3 = document.getElementById('date3');
-  const title3 = document.getElementById('title3');
-  const description3 = document.getElementById('description3');
-  const reference3 = document.getElementById('reference3');
   const description4 = document.getElementById('description4');
   const stack = document.getElementById('stack');
-
-
+  const sendAMessage = document.getElementById('cf-submit');
+  const cfName = document.getElementById("cf-name");
+  const subject = document.getElementById("cf-subject");
+  const email = document.getElementById("cf-email");
+  const message = document.getElementById("cf-message");
 
   if (lang === 'es') {
-    document.getElementById('cv').href = "..//Curriculums/IngenieraSoftware-JocselynAguilar.pdf";
+    document.getElementById('cv').href = "../Curriculums/IngenieraSoftware-JocselynAguilar.pdf";
     englandFlag.style.transform = "scale(1)";
     spainFlag.style.transform = "scale(1.5)";
     home_a.textContent = "Inicio"
     services_a.textContent = "Tecnologías"
     portfolio_a.textContent = "Portafolio"
+    portfolioText.textContent = "Portafolio"
+    portfolioDesc.textContent = "Los siguientes son proyectos que están terminados. Estás invitado a visitar mi repositorio en GitHub, donde puedes encontrar el código fuente de cada proyecto y más."
+    portfolioLink.textContent = "Ir al repositorio de GitHub"
+    bloom.textContent = "Aplicación web creada para ayudar a las personas a gestionar problemas asociados con la ansiedad, tiene como base la creación de módulos creados a partir de investigaciones que van desde juegos hasta gráficos que se alimentan a través de un wearable. La aplicación no solo permite una ayuda a las personas que sufren de este trastorno sino que permite a los médicos de salud ayudar a sus pacientes por medio de la comunicación y el manejo de recursos y tareas."
+    homeflix.textContent = "Aplicación de reproductor de video de escritorio creada para brindar a los usuarios una plataforma donde puedan ver, descargar y subir videos. La aplicación también permite a los usuarios compartir videos a través de la red interna."
+    cenfoteco.textContent = "Juego de estrategia basado en figuras de tetris, el primer jugador en crear un camino y destruir el castillo rival es el ganador."
+    wazeOfThrones.textContent = "Aplicación de mapa de escritorio que presenta el renombrado mapa de Westeros de la famosa serie. Con esta aplicación, los usuarios pueden recibir direcciones fácilmente y ver distancias entre ubicaciones. Simplemente ingrese su punto de partida y destino para navegar por los vastos territorios de Westeros con facilidad."
+    snake.textContent = "Juego de serpiente de escritorio inspirado en la época vintage, un clásico nostálgico que cobra vida en la pantalla de la computadora. Revive el encanto del juego original mientras ayudas a tu serpiente a comer cada sabrosa manzana para crecer más y más."
+    monopoly.textContent = "Aplicación de consola del clásico juego Monopoly. Esta versión replica fielmente cada característica del juego real, brindando una experiencia inmersiva y emocionante directamente desde la pantalla de tu consola."
+
     contact_a.textContent = "Contacto"
+    contactTitle.textContent = "Contacto"
+    contactDesc.textContent = "Quieres saber más de mi? Envíame un email y te responderé tan pronto como sea posible."
+    credits.textContent = "Portafolio profesional desarrollado y diseñado por Jocselyn Aguilar"
     welcome.textContent = "Bienvenida/o"
     cv.textContent = "Descargar CV"
-    experience.textContent = "Experiencia"
+    // experience.textContent = "Experiencia"
     name.textContent = "Hola my nombre es Jocselyn Aguilar!"
     summary.textContent = "Ingeniera Full Stack con experiencia en Python, Django, Angular y Docker. También cuento con conocimientos de Java, Spring Boot, React y AWS. Soy proactiva y adaptable. Busco seguir creciendo profesionalmente y aportar mis habilidades a proyectos desafiantes."
     aboutMe1.textContent = "Soy un desarrolladora de software impulsada por la pasión de crear. Mi felicidad reside en el trabajo que hago, donde me sumerjo en desafíos, innovo y doy vida a las ideas. Con cada proyecto, me esfuerzo por traspasar límites, resolver problemas y aprovechar tecnologías de vanguardia para satisfacer las necesidades y deseos de los clientes, creando soluciones que superen las expectativas e impulsen el progreso"
-    experienP.textContent = "Experiencia";
-    date1.textContent = "Mayo 2023 - Noviembre 2023";
-    title1.textContent = "Ingeniera de interfaz gráfica - EEDS";
-    description1.textContent = "Aplicación web creada utilizando Angular 13 junto con librerías como Bootstrap y Angular Material. Trabajo directo con el cliente para tomar requisitos y modelar la aplicación.";
-    reference1.textContent = "Erick Brenes – Ingeniero en software – Professor – Fundador EEDS"
-    date2.textContent = "Agosto 2023 - Octuber 2023"
-    title2.textContent = "Práctica en ingeniería Full Stack- 4Geeks"
-    description2.textContent = "Desarrollo full stack con Python, Django y Angular. Mis responsabilidades incluían aprender e implementar estas tecnologías para mejorar la aplicación web principal de la empresa. Como parte de estas mejoras, se aplicaron tecnologías como Typesense y el desarrollo de una función en GCP capaz de comunicarse con OpenAI para el análisis de currículums. Se trabajó con la metodología Scrum para la gestión del proyecto."
-    reference2.textContent = "Allan Porras - Software Engineer – Fundador 4Geeks"
-    date3.textContent = "Abril 2022 - Agosto 2023"
-    title3.textContent = "Aprendiz en Ingeniería Full Stack - Limbo"
-    description3.textContent = "Como voluntaria y aprendiz en el programa Limbo, lideré el desarrollo de una aplicación web desde el inicio, dedicando tiempo a adquirir habilidades en las tecnologías a utilizar, incluyendo GraphQL, React, Typecript y NodeJS. También tuve la responsabilidad de impartir mis conocimientos a los nuevos estudiantes del programa, y ​​también ocupé el rol de instructor en la Universidad Cenfotec, cubriendo temas como programación orientada a objetos y fundamentos de programación."
-    reference3.textContent = "Andre Solis – Software Engineer – Professor – fundador Limbo"
     stack.textContent = "Tecnologías"
     description4.textContent = "La siguiente lista comprende las tecnologías con las que tengo experiencia. Sin embargo, estoy constantemente dispuesta a explorar nuevas tecnologías para mejorar mi capacidad de crear e innovar sistemas y aplicaciones."
+    iam.textContent = "Yo soy"
+    sendAMessage.textContent = "Enviar Mensaje"
+
+    cfName.setAttribute("placeholder", "Ingresa tu nombre");
+    subject.setAttribute("placeholder", "Asunto");
+    email.setAttribute("placeholder", "Ingresa tu email");
+    message.setAttribute("placeholder", "Mensaje");
+
+    resetTyped(esDataOptions)
 
   } else if (lang === 'en') {
-    document.getElementById('cv').href = "..//Curriculums/SoftwareEngineer-JocselynAguilar.pdf";
+    document.getElementById('cv').href = "../Curriculums/SoftwareEngineer-JocselynAguilar.pdf";
     englandFlag.style.transform = "scale(1.5)";
     spainFlag.style.transform = "scale(1)";
     home_a.textContent = "Home"
     services_a.textContent = "Stack"
     portfolio_a.textContent = "Portfolio"
+    portfolioText.textContent = "Portfolio"
+    portfolioDesc.textContent = "The following are projects that are finished, you are invited to visit my GitHub repository, where you can find the source code of every project and more."
+    portfolioLink.textContent = "Go to GitHub repository."
+    bloom.textContent = "The web application is created to assist individuals in managing anxiety-related issues. It is based on the development of modules created from research ranging from games to graphics that are fed through a wearable device. The application not only provides assistance to individuals suffering from this disorder but also enables healthcare professionals to help their patients through communication and resource and task management."
+    homeflix.textContent = "Desktop video player application created to give the users a platform where they can watch, download and upload videos. The app also allows the users share videos through the internal network."
+    cenfoteco.textContent = "Strategy game based on Tetris figures, the first player to create a path and destroy the opponent's castle wins."
+    wazeOfThrones.textContent = "Desktop map application featuring the renowned map of Westeros from the famous series. With this application, users can effortlessly receive directions and view distances between locations. Simply input your starting point and destination to navigate the vast lands of Westeros with ease."
+    snake.textContent = "Vintage-inspired desktop snake game, a nostalgic classic brought to life on the computer screen. Relive the charm of the original game as you help your serpent eats each tasty apple to grow more and more."
+    monopoly.textContent = "Console application of the classic Monopoly game. This rendition faithfully replicates every feature of the real game, delivering an immersive and thrilling experience right from your console screen."
+
     contact_a.textContent = "Contact"
+    contactTitle.textContent = "Contact"
+    contactDesc.textContent = "Want to know more about me? Drop me an email and I will get back to you as soon as I can."
+    credits.textContent = "Professional Portfolio developed and design by Jocselyn Aguilar"
     welcome.textContent = "Welcome"
     cv.textContent = "Download CV"
-    experience.textContent = "Experience"
     name.textContent = "Hello my name is Jocselyn Aguilar!"
     summary.textContent = "Full Stack  Engineer with experience in Python, Django, Angular and Docker. I also have knowledge of Java, Spring Boot, React and AWS. I am Proactive and adaptable. I seek to continue growing professionally and contribute my skills to challenging projects."
     aboutMe1.textContent = "I'm an software developer fueled by a passion for creation. My happiness resides in the work I do, where I dive into challenges, innovate, and bring ideas to life. With each project, I strive to push boundaries, solve problems, and leverage cutting-edge technologies to fulfill the needs and desires of our clients, crafting solutions that exceed expectations and drive progress."
-    experienP.textContent = "Experience";
-    date1.textContent = "May 2023 - November 2023";
-    title1.textContent = "Front End Engineer - EEDS";
-    description1.textContent = "Web application created using Angular 13 together with libraries such as Bootstrap and Angular Material. Direct work with the client to collect requirements and model the application.";
-    reference1.textContent = "Erick Brenes – Software Engineer – Professor – EEDS Founder"
-    date2.textContent = "August 2023 - October 2023"
-    title2.textContent = "Intership In Full Stack Engineering - 4Geeks "
-    description2.textContent = "Full stack development with Python, Django and Angular. My responsibilities included learning and implementing these technologies to improve the company's main web application. As part of these improvements, technologies such as Typesense were applied and the development of a function in GCP capable of communicating with OpenAI for resume analysis. We worked with the Scrum methodology to manage the project."
-    reference2.textContent = "Allan Porras - Software Engineer – 4Geeks Founder"
-    date3.textContent = "April 2022 - August 2023"
-    title3.textContent = "Apprentice In Full Stack Engineering - Limbo"
-    description3.textContent = "As a volunteer and apprentice in the program, I led the development of a web application from the beginning, dedicating time to acquiring skills in the technologies to be used, including GraphQL, React, Typescript and NodeJS. I also had the responsibility of imparting my knowledge to new students in the program, and I also held the role of instructor at Cenfotec University, covering topics such as object-oriented programming and programming fundamentals."
-    reference3.textContent = "Andre Solis – Software Engineer – Professor – Limbo Founder"
     description4.textContent = "The following stack comprises the technologies with which I have experience. However, I'm constantly open to exploring new technologies to enhance my ability to create and innovate systems and applications."
     stack.textContent = "Technology Stack"
+    iam.textContent = "I am"
+    sendAMessage.textContent = "Send Message"
+
+    cfName.setAttribute("placeholder", "Enter your name");
+    subject.setAttribute("placeholder", "Subject");
+    email.setAttribute("placeholder", "Enter your email address");
+    message.setAttribute("placeholder", "Message");
+
+    resetTyped(enDataOptions)
   }
+
+  currentLanguage = lang
+}
+
+function resetTyped (options) {
+  const element = document.getElementById('iamFeatures');
+
+  if(typed && typed.constructor === Typed) {
+    typed.destroy();
+  }
+
+  typed = new Typed(element, {
+    strings: options,
+    typeSpeed: 80,
+    loop: true,
+    backSpeed: 80
+  });
 }
 
 function sendEmail(){
@@ -745,7 +783,7 @@ function sendEmail(){
     snackbar.classList.remove("alert-success");
     snackbar.classList.add("alert-danger");
     snackbar.classList.add("show");
-    snackbar.innerText = "All fields are required..."
+    snackbar.innerText = currentLanguage === "en" ? "All fields are required..." : "Todos los campos son requeridos..."
     setTimeout(function(){ snackbar.classList.remove("show"); }, 3000);
     return;
   }
@@ -763,7 +801,7 @@ function sendEmail(){
     snackbar.classList.remove("alert-danger");
     snackbar.classList.add("alert-success");
     snackbar.classList.add("show");
-    snackbar.innerText = "Email sent..."
+    snackbar.innerText = currentLanguage === "en" ? "Email sent..." : "Email enviado..."
     setTimeout(function(){ snackbar.classList.remove("show"); }, 3000);
   });
 }
