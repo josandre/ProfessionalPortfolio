@@ -606,15 +606,14 @@ const esDataOptions = ["Ingeniera de software", "Desarrolladora de back-end", "D
 
 })(jQuery);
 
-document.addEventListener("DOMContentLoaded", function() {
-  var logoLink = document.getElementById("logoLink");
-  var imageOverlay = document.getElementById("imageOverlay");
 
-  logoLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    var imageURL = "./images/logo-animated2.gif"; // Default image URL
-    showImage(imageURL);
-  });
+
+window.onload = function (){
+  resetTyped(enDataOptions)
+  changeLanguage(currentLanguage);
+
+  var imageURL = "./images/logo-animated2.gif"; // Default image URL
+  showImage(imageURL);
 
   function showImage(imageURL) {
 
@@ -628,12 +627,6 @@ document.addEventListener("DOMContentLoaded", function() {
       imageOverlay.appendChild(image);
     };
   }
-});
-
-window.onload = function (){
-  resetTyped(enDataOptions)
-
-  changeLanguage(currentLanguage);
 }
 
 function changeLanguage(lang) {
@@ -670,7 +663,7 @@ function changeLanguage(lang) {
   const message = document.getElementById("cf-message");
 
   if (lang === 'es') {
-    document.getElementById('cv').href = "../Curriculums/IngenieraSoftware-JocselynAguilar.pdf";
+    document.getElementById('cv').href = "../Curriculums/SoftwareEngineer-JocselynAguilar.pdf";
     englandFlag.style.transform = "scale(1)";
     spainFlag.style.transform = "scale(1.5)";
     home_a.textContent = "Inicio"
